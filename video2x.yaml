@@ -79,7 +79,7 @@ ffmpeg:
       '-pix_fmt': null
       '-metadata': 'comment=Upscaled by Video2X'
 gifski:
-  gifski_path: '/content/video2x-4.7.0/src/widgets'
+  gifski_path: '/content/video2x-4.7.0/src/wrappers'
   # output: null # Destination file to write to
   # fps: 20 # Animation frames per second (for PNG frames only) [default: 20]
   fast: false # 3 times faster encoding, but 10% lower quality and bigger file
