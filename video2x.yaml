@@ -78,6 +78,17 @@ ffmpeg:
       # '-movflags': 'use_metadata_tags' # copy custom/arbitrary metadata tags
       '-pix_fmt': null
       '-metadata': 'comment=Upscaled by Video2X'
+gifski:
+  gifski_path: '/content/video2x-4.7.0/src/widgets'
+  # output: null # Destination file to write to
+  # fps: 20 # Animation frames per second (for PNG frames only) [default: 20]
+  fast: false # 3 times faster encoding, but 10% lower quality and bigger file
+  quality: 100 # Lower quality may give smaller file
+  #width: null # Maximum width
+  #height: null # Maximum height (if width is also set)
+  once: false # Do not loop the GIF
+  nosort: false # Use files exactly in the order given, rather than sorted
+  quiet: false # Do not show a progress bar
 video2x:
   video2x_cache_directory: null # default: %TEMP%\video2x, directory where cache files are stored, will be deleted if preserve_frames is not set to true
   extracted_frame_format: png # png/jpg intermediate file format used for extracted frames during video processing
