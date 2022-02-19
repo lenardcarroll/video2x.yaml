@@ -66,7 +66,7 @@ waifu2x_ncnn_vulkan:
   x: false # enable tta mode
   #f: png # output image format (jpg/png/webp, default=ext/png)
 srmd_ncnn_vulkan:
-  path: 'dependencies\srmd-ncnn-vulkan\srmd-ncnn-vulkan'
+  path: '/content/srmd-ncnn-vulkan-20200818-linux/srmd-ncnn-vulkan'
   v: null # verbose output
   #i: null # input-path: input image path (jpg/png) or directory
   #o: null # output-path: output image path (png) or directory
@@ -79,7 +79,7 @@ srmd_ncnn_vulkan:
   x: false # enable tta mode
   #f: png # output image format (jpg/png/webp, default=ext/png)
 realsr_ncnn_vulkan:
-  path: 'dependencies\realsr-ncnn-vulkan\realsr-ncnn-vulkan'
+  path: '/content/realsr-ncnn-vulkan-20200818-linux/realsr-ncnn-vulkan'
   v: null # verbose output
   #i: null # input-path: input image path (jpg/png) or directory
   #o: null # output-path: output image path (png) or directory
@@ -120,7 +120,7 @@ anime4kcpp:
   webVideo: null # process the video from URL
   alpha: false # preserve the Alpha channel for transparent image
 ffmpeg:
-  ffmpeg_path: 'dependencies\ffmpeg\bin'
+  ffmpeg_path: 'usr\bin'
   intermediate_file_name: 'intermediate.mkv'
   # Step 1: Frame Extraction
   # extract all frames from original input into temporary directory
@@ -166,7 +166,7 @@ ffmpeg:
       '-pix_fmt': null
       '-metadata': 'comment=Upscaled by Video2X'
 gifski:
-  gifski_path: 'dependencies\gifski\win\gifski'
+  gifski_path: 'video2x-4.7.0/src/wrappers'
   # output: null # Destination file to write to
   # fps: 20 # Animation frames per second (for PNG frames only) [default: 20]
   fast: false # 3 times faster encoding, but 10% lower quality and bigger file
