@@ -7,7 +7,7 @@
 #   save the default value permanently.
 # Items commented out are parameters irrelevant to this context
 #   or parameters handled by Video2X internally.
-waifu2x_caffe:
+waifu2x_ncnn_vulkan:
   path: '/content/waifu2x-ncnn-vulkan-20200818-linux/waifu2x-ncnn-vulkan'
   tta: 0 # <0|1> 8x slower and slightly high quality
   gpu: 0 # gpu device no
