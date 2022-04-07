@@ -9,25 +9,17 @@
 #   or parameters handled by Video2X internally.
 waifu2x_ncnn_vulkan:
   path: '/content/waifu2x-ncnn-vulkan-20200818-linux/waifu2x-ncnn-vulkan'
-  tta: 0 # <0|1> 8x slower and slightly high quality
-  gpu: 0 # gpu device no
-  batch_size: 1 # input batch size
-  crop_h: null # input image split size(height)
-  crop_w: null # input image split size(width)
-  crop_size: 128 # input image split size
-  output_depth: 8 # output image chanel depth bit
-  output_quality: -1 # output image quality
-  process: gpu # <cpu|gpu|cudnn> process mode
-  model_dir: null # path to custom model directory (don't append last / )
-  #scale_height: 0 # custom scale height (specifying this will overwrite scale_ratio)
-  #scale_width: 0 # custom scale width (specifying this will overwrite scale_ratio)
-  #scale_ratio: null # custom scale ratio
-  noise_level: 3 # <0|1|2|3> noise reduction level
-  mode: noise_scale # <noise|scale|noise_scale|auto_scale> image processing mode
-  output_extention: null # extension to output image file when output_path is (auto) or input_path is folder
-  input_extention_list: null # extension to input image file when input_path is folder
-  #output_path: null # path to output image file (when input_path is folder, output_path must be folder)
-  #input_path: null # (required) path to input image file
+  v: null # verbose output
+  #i: null # input-path: input image path (jpg/png) or directory
+  #o: null # output-path: output image path (png) or directory
+  'n': 3 # noise-level: denoise level (-1/0/1/2/3/4/5/6/7/8/9/10, default=3)
+  s: 2 # upscale ratio (2/3/4, default=2)
+  t: 400 # tile-size: tile size (>=32, default=400)
+  m: null # srmd model path (default=models-srmd)
+  g: 0 # gpu device to use (default=0)
+  j: '1:2:2' # thread count for load/proc/save (default=1:2:2)
+  x: false # enable tta mode
+  #f: png # output image format (jpg/png/webp, default=ext/png)
 srmd_ncnn_vulkan:
   path: '/content/srmd-ncnn-vulkan-20200818-linux/srmd-ncnn-vulkan'
   v: null # verbose output
